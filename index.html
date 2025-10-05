@@ -39,6 +39,19 @@
     .hero{display:flex;flex-direction:column;align-items:center;text-align:center;padding:64px 0}
     .hero h1{font-size:42px;color:white}
     .hero p{color:var(--muted);max-width:640px}
+    /* Button */
+    .btn{
+      background:var(--accent);
+      color:#0f1724;
+      padding:12px 28px;
+      border-radius:50px;
+      font-weight:700;
+      text-decoration:none;
+      display:inline-block;
+      margin-top:24px;
+      transition:background .2s, transform .2s;
+    }
+    .btn:hover{background:#f59e0b;transform:translateY(-2px);}
     /* Team Section */
     .team{margin-top:60px}
     .grid-team{
@@ -65,14 +78,6 @@
     }
     .member h4{margin:0;color:white;font-weight:700}
     .member p{margin:4px 0;color:var(--muted);font-size:14px}
-    .socials{display:flex;justify-content:center;gap:10px;margin-top:8px}
-    .socials a{
-      color:var(--accent);
-      text-decoration:none;
-      font-size:18px;
-      transition:color .2s;
-    }
-    .socials a:hover{color:white}
     footer{
       padding:28px 0;
       color:var(--muted);
@@ -120,6 +125,7 @@
       <section class="hero">
         <h1>Bienvenue sur le site officiel d’Enactus ISIMG</h1>
         <p>Nous sommes une communauté d’étudiants engagés à créer un impact positif à travers l’entrepreneuriat social et l’innovation durable.</p>
+        <a class="btn" href="https://forms.gle/tonlienici" target="_blank">Remplir le Formulaire</a>
         <div style="margin-top:16px;color:var(--muted)">
           <strong>Contact :</strong> enactus@isimg.tn · 
           <a href="https://www.facebook.com/profile.php/?id=61570242411845" target="_blank" style="color:var(--accent);text-decoration:none;">Facebook</a> · 
@@ -130,8 +136,6 @@
       <section id="team" class="team">
         <h2>Notre Équipe</h2>
         <div class="grid-team">
-
-          <!-- 16 Member Cards -->
           <div class="member"><img src="8cb5f904-7e27-4d96-88d8-7aed2df11171.jpeg" alt="Ghofran Chergui"><h4>Ghofran Chergui</h4><p>ghofrane.chergui@isimg.tn</p></div>
           <div class="member"><img src="3afddb3a-6395-45d7-9b36-d0db35836f12.jpeg" alt="Jihen Hamdi"><h4>Jihen Hamdi</h4><p>jihen.hamdi@isimg.tn</p></div>
           <div class="member"><img src="e6e2daf6-b132-4dbb-812e-869e683abfaf.jpeg" alt="Nahla Benyahia"><h4>Nahla Benyahia</h4><p>nbynahla@isimg.tn</p></div>
